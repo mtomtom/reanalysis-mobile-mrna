@@ -3,15 +3,15 @@ library(tidyverse)
 library(ggplot2)
 
 
-data_rosette <- read_csv("../Bioinformatics/FN_rosette.table", col_names = TRUE) 
+data_rosette <- read_csv("../Data/FN_rosette.table", col_names = TRUE) 
 
 data_rosette <- data_rosette %>% filter(nchar(REF)==1)
 data_rosette <- data_rosette %>% filter(str_detect(ALT, ","))
 
 Filtered_data_rosette <- data_rosette %>% select('#CHROM',POS,INFO)
-#write_tsv(Filtered_data_rosette,'../Bioinformatics/FN_rosette.reduced.table_20240911' )
+#write_tsv(Filtered_data_rosette,'../Data/FN_rosette.reduced.table_20240911' )
 
-data_REF <- read_tsv("../Bioinformatics/FN_rosette_REF_ALT_20240918.txt", col_names = TRUE) 
+data_REF <- read_tsv("../Data/FN_rosette_REF_ALT_20240918.txt", col_names = TRUE) 
 #View(data_REF)
 data_arranged <- arrange(data_REF, REF)
 data_arranged <- data_arranged %>% filter(ALT>-1 & ALT<400)  %>% mutate(id_rosette = row_number())
@@ -19,15 +19,15 @@ data_arranged <- data_arranged %>% filter(ALT>-1 & ALT<400)  %>% mutate(id_roset
 
 
 
-data_root <- read_csv("../Bioinformatics/FN_root.table", col_names = TRUE) 
+data_root <- read_csv("../Data/FN_root.table", col_names = TRUE) 
 data_root <- data_root %>% filter(nchar(REF)==1)
 data_root <- data_root %>% filter(str_detect(ALT, ","))
 Filtered_data_root <- data_root %>% select('#CHROM',POS,INFO)
 
 
-write_tsv(Filtered_data_root,'../Bioinformatics/FN_root.reduced.table_20240911' )
+write_tsv(Filtered_data_root,'../Data/FN_root.reduced.table_20240911' )
 
-data_root_REF <- read_tsv("../Bioinformatics/FN_root_REF_ALT_20240918.txt", col_names = TRUE) 
+data_root_REF <- read_tsv("../Data/FN_root_REF_ALT_20240918.txt", col_names = TRUE) 
 data_root_arranged <- arrange(data_root_REF, ALT_root)
 data_root_arranged <- data_root_arranged %>% filter(REF_root>-1 & REF_root <400)  %>% mutate(id_root = row_number())
 data_root_arranged
