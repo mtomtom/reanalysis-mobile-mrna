@@ -79,7 +79,7 @@ Filtered_merged_rosette_root <- merged_root_rosette %>% filter(REF >0 & ALT_root
            POS!="22687750" & POS!="22687759" & POS!="10318932")
 
 head(Filtered_merged_rosette_root)
-write_tsv(Filtered_merged_rosette_root,'../Bioinformatics/FN_rosette_root_for_Richard_20240918.txt' )
+write_tsv(Filtered_merged_rosette_root,'../Data/FN_rosette_root_for_Richard_20240918.txt' )
 
 
 
