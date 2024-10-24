@@ -13,7 +13,7 @@ mobilemRNAs<-function(nmin,Nstart,Nstop,Nincr){
 }
 
 # Data for Suppl Figure S1 Plot 1
-sink("random-mobile.data")
+sink("../Data/random-mobile.data")
 mobilemRNAs(3,100,10000,100)
 sink()
 
@@ -38,7 +38,7 @@ replMobilemRNAs<-function(nmin,replmin,repl,Nstart,Nstop,Nincr){
 }
 
 # Data for Suppl Figure S1 Plot 2
-sink("random-mobile-repl.data")
+sink("../Data/random-mobile-repl.data")
 replMobilemRNAs(1,1,3,100,10000,100)
 sink()
 
@@ -62,7 +62,7 @@ corrMobilemRNAs<-function(nmin,Nstart,Nstop,Nincr){
 }
 
 # Data for Suppl Figure S1 Plot 3
-sink("random-mobile-corr.data")
+sink("../Data/random-mobile-corr.data")
 corrMobilemRNAs(0,100,10000,100)
 sink()
 
