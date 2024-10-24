@@ -8,12 +8,12 @@ List of figures / tables:
 
 - [Table 1](Jupyter_notebooks/Table1.ipynb): Total numbers of reported mobile mRNAs in Arabidopsis thaliana (2) and Vitis girdiana (3) that can be explained by expected sequencing noise.
 - [Figure 1](Jupyter_notebooks/Figure2.ipynb): The distributions of nucleotides at SNP and non-SNP positions can be informative for evaluating the evidence for the alternate allele.
-- Supplemental Fig. S1. Published criteria for defining mobile mRNAs based on absolute read counts suffer from read-depth dependencies.
-- Supplemental Fig. S6. The uncertainty in the determination of the error rate depends on the read depth.
-- Supplemental Fig. S7. Most SNPs in mobile mRNAs do not have evidence for the alternate allele.
-- Supplemental Fig. S8. Overlay of the ratios of nucleotides at SNP and non-SNP position.
-- Supplemental Fig. S9. Some datasets exhibit features that can be interpreted either as non-selective whole transcriptome movement or contamination. 
-- Supplemental Fig. S 10. Genome assembly incompleteness can lead to mapping challenges that may result in the identification of non-mobile transcripts being defined as mobile.
+- [Supplemental Fig. S1](R_code/): Published criteria for defining mobile mRNAs based on absolute read counts suffer from read-depth dependencies.
+- [Supplemental Fig. S6](R_code/): The uncertainty in the determination of the error rate depends on the read depth.
+- [Supplemental Fig. S7](R_code): Most SNPs in mobile mRNAs do not have evidence for the alternate allele.
+- [Supplemental Fig. S8](R_code): Overlay of the ratios of nucleotides at SNP and non-SNP position.
+- [Supplemental Fig. S9](R_code): Some datasets exhibit features that can be interpreted either as non-selective whole transcriptome movement or contamination. 
+- [Supplemental Fig. S 10](R_code): Genome assembly incompleteness can lead to mapping challenges that may result in the identification of non-mobile transcripts being defined as mobile.
 
   References:
 1. Kim, G., LeBlanc, M. L., Wafula, E. K., DePamphilis, C. W., & Westwood, J. H. (2014). Genomic-scale exchange of mRNA between a parasitic plant and its hosts. Science, 345(6198), 808-811.
